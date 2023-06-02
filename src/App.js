@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
+import data from "./data";
 
 function App() {
+  const placeElements = data.map((place) => {
+    return <Main place={place} />;
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col justify-center items-center w-full h-full bg-slate-200 ">
+      <Nav />
+      <div className="flex flex-col justify-around items-start w-5/6 sm:w-4/6  h-full space-y-10 my-10">
+        {placeElements}
+      </div>
     </div>
   );
 }
