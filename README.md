@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# My Travel Diary
+
+A mini-chronicle of globe-trotting escapades.
+
+Live Site- https://imaginative-dango-63fa75.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
